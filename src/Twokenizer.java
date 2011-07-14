@@ -15,11 +15,29 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+ 
+/*
+ TweetMotif is licensed under the Apache License 2.0: 
+ http://www.apache.org/licenses/LICENSE-2.0.html
+ Copyright Brendan O'Connor, Michel Krieger, and David Ahn, 2009-2010.
+*/
+
+/*
+ Scala verion of TweetMotif is licensed under the Apache License 2.0: 
+ http://www.apache.org/licenses/LICENSE-2.0.html
+ Copyright Jason Baldridge, and David Snyder, 2011.
+*/
+
+/*
+ * A direct port to Java from Scala version of 
+ * Twitter tokenizer at https://bitbucket.org/jasonbaldridge/twokenize
+ * Original Python version TweetMotif can be found at https://github.com/brendano/tweetmotif
+ * 
+ * Author: Vinh Khuc (khuc@cse.ohio-state.edu)
+ * July 2011
+ */ 
 
 import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.FileReader;
-import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
@@ -27,15 +45,6 @@ import java.util.List;
 import java.util.Vector;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
- 
-/**
- * A direct port to Java from Scala version of 
- * Twitter tokenizer at https://bitbucket.org/jasonbaldridge/twokenize
- * Original Python version can be found at https://github.com/brendano/tweetmotif
- * 
- * Author: Vinh Khuc (khuc@cse.ohio-state.edu)
- * July 2011
- */ 
 
 public class Twokenizer {
 	
