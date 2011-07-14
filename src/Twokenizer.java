@@ -32,8 +32,9 @@ import java.util.regex.Pattern;
  * A direct port to Java from Scala version of 
  * Twitter tokenizer at https://bitbucket.org/jasonbaldridge/twokenize
  * Original Python version can be found at https://github.com/brendano/tweetmotif
- * @author VinhNgocKhuc
- *
+ * 
+ * Author: Vinh Khuc (khuc@cse.ohio-state.edu)
+ * July 2011
  */ 
 
 public class Twokenizer {
