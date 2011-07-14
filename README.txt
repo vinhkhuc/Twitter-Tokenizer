@@ -1,0 +1,2 @@
+This is a direct port to Java from Scala version of Twitter tokenizer at https://bitbucket.org/jasonbaldridge/twokenize. 
+The original Python version can be found at https://github.com/brendano/tweetmotif.
