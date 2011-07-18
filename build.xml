@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project basedir="." default="build" name="TwitterTokenizer-github">
+    <property name="target" value="1.6"/>
+    <property name="source" value="1.6"/>
+    <path id="TwitterTokenizer-github.classpath">
+        <pathelement location="bin"/>
+    </path>
+    <target name="init">
+        <mkdir dir="bin"/>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="src">
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+	<target name="run" depends="clean, build">
+   		<java classname="Twokenizer" fork="true">
+   			<classpath refid="TwitterTokenizer-github.classpath"/>
+   		</java>
+    </target>
+    <target name="clean">
+        <delete dir="bin"/>
+    </target>
+    <target depends="clean" name="cleanall"/>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects"/>
+    <target depends="init" name="build-project">
+        <javac debug="true" debuglevel="${debuglevel}" destdir="bin" source="${source}" target="${target}">
+			<compilerarg line="-encoding utf-8"/>
+            <src path="src"/>
+            <classpath refid="TwitterTokenizer-github.classpath"/>
+        </javac>
+    </target>
+</project>
